@@ -1,5 +1,6 @@
 const listItems = document.querySelectorAll('.menu-list-items');
 const toggleTagsBtn = document.getElementById('toggleTags');
+const pauseplay = document.getElementById('play-pause-button');
 
 const languages = [
     'Spanish', 'French', 'German', 'Chinese', 'Japanese', 'Arabic', 'Russian',
@@ -61,3 +62,19 @@ toggleTagsBtn.addEventListener('click', function () {
         removeAddedTags();
     }
 });
+
+function togglePlayPause() {
+    var video = document.getElementById('video-element');
+
+    if (video.paused || video.ended) {
+        video.play();
+        document.getElementById('play-pause-button').classList.remove('fa-play-circle');
+        document.getElementById('play-pause-button').classList.add('fa-pause-circle');
+    } else {
+        video.pause();
+        document.getElementById('play-pause-button').classList.remove('fa-pause-circle');
+        document.getElementById('play-pause-button').classList.add('fa-play-circle');
+    }
+}
+
+pauseplay.addEventListener('click', togglePlayPause)

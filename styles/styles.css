@@ -231,6 +231,24 @@ input:focus {
         display: flex;
         justify-content: center;
         align-items: center;
+        .global-vid {
+          width: 390px;
+          height: 350px;
+          margin-right: 20px;
+          position: relative;
+          .video {
+            width: inherit;
+            height: inherit;
+          }
+          .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            color: #fff;
+          }
+        }
         .global-text {
           font-size: 18px;
         }
@@ -298,7 +316,6 @@ input:focus {
 /* Wave image */
 .wave-final {
   overflow: hidden;
-  margin-top: -7rem;
   .wave-final-img {
     object-fit: contain;
     width: 100%;
@@ -307,7 +324,6 @@ input:focus {
 
 /* Free Chat */
 .free-chat {
-  margin-top: -5rem;
   .free-chat-container {
     max-width: 780px;
     margin: 0 auto;
