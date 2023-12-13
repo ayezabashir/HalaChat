@@ -221,7 +221,7 @@ input:focus {
 .hala-global {
   .hala-global-container {
     display: flex;
-    max-width: 750px;
+    max-width: 780px;
     margin: 0 auto;
     .hala-global-content {
       .header {
@@ -242,7 +242,7 @@ input:focus {
 /* Voice Chat Features */
 .voice-chat-features {
   .voice-chat-container {
-    max-width: 750px;
+    max-width: 780px;
     margin: 0 auto;
     .voice-chat-content {
       .header {
@@ -291,6 +291,63 @@ input:focus {
         margin-left: 5px;
         cursor: pointer;
       }
+    }
+  }
+}
+
+/* Wave image */
+.wave-final {
+  overflow: hidden;
+  margin-top: -7rem;
+  .wave-final-img {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+/* Free Chat */
+.free-chat {
+  margin-top: -5rem;
+  .free-chat-container {
+    max-width: 780px;
+    margin: 0 auto;
+    .btn-free-chat {
+      margin: 0 auto;
+      text-align: center;
+      width: 220px;
+      height: 58px;
+      background: #fff;
+      padding: 0 5px;
+      .bg-orange {
+        font-size: 24px;
+        width: 220px;
+        height: 50px;
+        text-align: center;
+        padding-top: 5px;
+        margin: 0 auto;
+        background: #ffa934;
+      }
+    }
+  }
+}
+
+.footer {
+  background: #ffa934;
+  .footer-container {
+    margin: 0 auto;
+    width: 1000px;
+    padding: 20px 10px;
+    .social-links {
+      width: 120px;
+      .social-icons {
+        width: 30px;
+        cursor: pointer;
+      }
+    }
+    .copyrights {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center !important;
     }
   }
 }
