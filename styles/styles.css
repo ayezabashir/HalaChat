@@ -271,3 +271,26 @@ input:focus {
     }
   }
 }
+
+/* Languages options */
+.lang-opt {
+  max-width: 850px;
+  margin: 0 auto;
+  .lang-opt-container {
+    .lang-opt-content {
+      text-align: center;
+      .tag {
+        display: inline-block;
+        margin: 10px 3px;
+        padding: 4px 15px;
+        background: #9f0eaf;
+      }
+      .fa-plus-circle,
+      .fa-minus-circle {
+        color: #fff;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
