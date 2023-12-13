@@ -209,8 +209,64 @@ input:focus {
       margin: 0 auto;
       width: 1000px;
       .menu-list-items {
+        font-size: 18px;
         padding: 15px 10px;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+/* Global Voice Chat */
+.hala-global {
+  .hala-global-container {
+    display: flex;
+    max-width: 750px;
+    margin: 0 auto;
+    .hala-global-content {
+      .header {
+        text-align: center;
+      }
+      .hala-global-desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .global-text {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+/* Voice Chat Features */
+.voice-chat-features {
+  .voice-chat-container {
+    max-width: 750px;
+    margin: 0 auto;
+    .voice-chat-content {
+      .header {
+        text-align: center;
+      }
+      .cards {
+        .card-container {
+          width: 250px;
+          height: 460px;
+          background: #ffa934;
+          color: #23005e;
+          .card-content {
+            margin-top: 20px;
+            .card-img {
+              margin: 0 auto;
+              width: 100px;
+            }
+            .card-desc {
+              .desc {
+                font-size: 16px;
+              }
+            }
+          }
+        }
       }
     }
   }
