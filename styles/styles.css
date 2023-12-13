@@ -41,13 +41,17 @@ button:active {
   border: none;
 }
 
+input:focus {
+  border-color: #8e91ff !important;
+}
+
 .form-check-input:checked {
-  background-color: green !important;
-  border-color: green !important;
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
 }
 
 .form-check-input:focus {
-  border-color: green !important;
+  border-color: #4caf50 !important;
   box-shadow: none;
 }
 
@@ -82,7 +86,7 @@ button:active {
               width: 20px;
               height: 20px;
               top: 0;
-              right: 6px;
+              right: 15px;
               z-index: 6;
               background: #fff;
               border-radius: 50%;
@@ -104,7 +108,7 @@ button:active {
     }
     .chat-options {
       width: 100%;
-      margin-top: 38px;
+      margin-top: 57px;
       .chat-start {
         width: 100% !important;
         .btn {
@@ -115,6 +119,7 @@ button:active {
       .chat-stop {
         .btn {
           background: #9f0faf;
+          width: 100%;
         }
       }
     }
@@ -132,6 +137,31 @@ button:active {
       .chat-room-container {
         position: absolute;
         bottom: 0;
+        width: 100%;
+        .chat-input-options {
+          background: #000226;
+          width: 100%;
+          .input {
+            .fa {
+              color: #fff;
+              text-align: center;
+              margin-right: 5px;
+              cursor: pointer;
+            }
+            .emoji {
+              padding-left: 5px;
+            }
+            .input-text {
+              width: 80%;
+              padding-left: 10px !important;
+            }
+            .fa-paper-plane {
+              text-align: right;
+              margin-left: 10px;
+              margin-right: 0;
+            }
+          }
+        }
       }
     }
     .hala-chat-options {
