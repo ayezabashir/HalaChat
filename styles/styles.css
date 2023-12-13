@@ -11,6 +11,7 @@ body {
   background: url("/assets/bg.jpg");
   background-position: center center;
   background-size: cover;
+  background-color: #000113;
   background-repeat: no-repeat;
 }
 
@@ -34,6 +35,12 @@ p {
   font-weight: 700;
 }
 
+button:focus,
+button:active {
+  outline: none;
+  border: none;
+}
+
 .form-check-input:checked {
   background-color: green !important;
   border-color: green !important;
@@ -47,6 +54,7 @@ p {
 .hala-top-section {
   .logo-container {
     .logo {
+      margin-bottom: -30px;
       width: 150px;
     }
   }
@@ -96,6 +104,7 @@ p {
     }
     .chat-options {
       width: 100%;
+      margin-top: 38px;
       .chat-start {
         width: 100% !important;
         .btn {
@@ -113,15 +122,45 @@ p {
       color: #37d926;
     }
   }
-  .text-chat-room {
-    height: 450px;
-    width: 450px;
-    background: url("/assets/chat-room.jpg");
-    background-position: top center;
-    position: relative;
-    .chat-room-container {
-      position: absolute;
-      bottom: 0;
+  .text-chat {
+    .text-chat-room {
+      height: 450px;
+      width: 450px;
+      background: url("/assets/chat-room.jpg");
+      background-position: top center;
+      position: relative;
+      .chat-room-container {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    .hala-chat-options {
+      width: 100% !important;
+      margin-top: 20px;
+      .chat-both {
+        width: 50%;
+        margin-right: 8px;
+        .btn-both {
+          width: 100%;
+          display: flex !important;
+          background: #8e91ff;
+          align-items: center;
+          justify-content: center;
+          .both-icon {
+            margin-right: 10px;
+          }
+        }
+      }
+      .chat-all {
+        width: 50%;
+        .btn-all {
+          width: 100%;
+          background: #8e91ff;
+          .all-icon {
+            margin-right: 8px;
+          }
+        }
+      }
     }
   }
 }
