@@ -41,8 +41,13 @@ button:active {
   border: none;
 }
 
+li {
+  list-style: none;
+}
+
 input:focus {
-  border-color: #8e91ff !important;
+  outline: #8e91ff !important;
+  border: 1px solid #8e91ff;
 }
 
 .form-check-input:checked {
@@ -190,6 +195,21 @@ input:focus {
             margin-right: 8px;
           }
         }
+      }
+    }
+  }
+}
+
+.menu-bar {
+  background: #ffa934;
+  .menu-container {
+    .menu-list {
+      display: flex;
+      margin: 0 auto;
+      width: 1000px;
+      .menu-list-items {
+        padding: 15px 10px;
+        cursor: pointer;
       }
     }
   }
