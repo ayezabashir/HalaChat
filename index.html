@@ -3,20 +3,29 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>HalaChat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
     <div class="hala-top-section d-flex justify-content-center mt-2">
@@ -24,47 +33,88 @@
         <div class="logo-container justify-content-start">
           <img class="logo" src="/assets/LOGO-T.png" alt="halachat logo" />
         </div>
-        <div class="chat-room-container d-flex justify-content-between gap-2">
-          <div
-            class="voice-chat-room d-flex flex-column justify-content-between align-items-center p-3"
-          >
-            <div class="voice-chat-desc">
-              <div class="user">
-                <div class="bg">
-                  <img class="user-img" src="/assets/user.png" alt="user" />
-                  <img
-                    class="user-icon"
-                    src="/assets/user_1893502.png"
-                    alt="user"
-                  />
+        <div class="chat-room-container">
+          <div class="voice-chat d-flex justify-content-between gap-2">
+            <div class="voice-chat-room">
+              <div
+                class="voice-chat-room-content d-flex flex-column justify-content-between align-items-center"
+              >
+                <div class="voice-chat-desc p-3">
+                  <div class="user">
+                    <div class="bg">
+                      <img class="user-img" src="/assets/user.png" alt="user" />
+                      <img
+                        class="user-icon"
+                        src="/assets/user_1893502.png"
+                        alt="user"
+                      />
+                    </div>
+                    <p class="text-white mt-3">
+                      <span class="fa fa-circle"></span> 304 users online
+                    </p>
+                  </div>
                 </div>
-                <p class="text-white mt-3">304 users online</p>
+                <h6 class="text-white semi-bold">
+                  Tap the
+                  <span class="text-green">START VOICE CHAT</span> button to
+                  call new stranger
+                </h6>
+                <div
+                  class="mt-5 form-check form-switch d-flex flex-column justify-content-center align-items-center"
+                >
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="flexSwitchCheckChecked"
+                    checked
+                  />
+                  <br />
+                  <label
+                    class="form-check-label mt-0 text-white"
+                    for="flexSwitchCheckChecked"
+                    >Auto call</label
+                  >
+                </div>
+              </div>
+              <div
+                class="chat-options mt-5 d-flex justify-content-center align-items-center gap-2"
+              >
+                <div class="chat-start w-75">
+                  <button class="btn text-uppercase text-white font-semi-bold">
+                    <span class="fa fa-microphone"></span>
+                    start new chat
+                  </button>
+                </div>
+                <div class="chat-stop w-25">
+                  <button class="btn text-uppercase text-white font-semi-bold">
+                    <span class="fa fa-stop-circle"></span>
+                    Stop
+                  </button>
+                </div>
               </div>
             </div>
-            <h6 class="text-white semi-bold">
-              Tap the <span class="text-green">START VOICE CHAT</span> button to
-              call new stranger
-            </h6>
-            <div
-              class="mt-5 form-check form-switch d-flex flex-column justify-content-center align-items-center"
-            >
-              <input
-                class="form-check-input"
-                type="checkbox"
-                role="switch"
-                id="flexSwitchCheckChecked"
-                checked
-              />
-              <br />
-              <label
-                class="form-check-label text-white"
-                for="flexSwitchCheckChecked"
-                >Auto call</label
-              >
-            </div>
-          </div>
-          <div class="text-chat-room">
-            <div class="chat-room-container"></div>
+            <!-- <div class="text-chat">
+              <div class="text-chat-room">
+                <div class="chat-room-container">
+                  <div class="input"></div>
+                </div>
+              </div>
+              <div class="hala-chat-options w-100">
+                <div class="chat-both">
+                  <button class="btn btn-both text-uppercase text-white">
+                    <img class="both-icon" src="assets/" alt="" />
+                    Both
+                  </button>
+                </div>
+                <div class="chat-all">
+                  <button class="btn btn-all text-uppercase text-white">
+                    <img src="all icon" alt="" />
+                    All
+                  </button>
+                </div>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
