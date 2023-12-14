@@ -60,7 +60,14 @@ input:focus {
   box-shadow: none;
 }
 
+.disabled {
+  background: gray !important;
+  outline: none;
+  border: none;
+}
+
 .hala-top-section {
+  position: relative;
   .logo-container {
     .logo {
       margin-bottom: -30px;
@@ -195,6 +202,19 @@ input:focus {
             margin-right: 8px;
           }
         }
+      }
+    }
+  }
+  .new-buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    padding: 0 0 0 20px;
+    .chat-start {
+      width: 100% !important;
+      .btn {
+        width: inherit;
+        background: #16b501;
       }
     }
   }

@@ -1,6 +1,9 @@
 const listItems = document.querySelectorAll('.menu-list-items');
 const toggleTagsBtn = document.getElementById('toggleTags');
 const pauseplay = document.getElementById('play-pause-button');
+const startNewChat = document.getElementById('start-new-chat');
+const userProfile = document.getElementById('user-profile')
+const onlineUsers = document.getElementById('online-users');
 
 const languages = [
     'Spanish', 'French', 'German', 'Chinese', 'Japanese', 'Arabic', 'Russian',
@@ -78,3 +81,24 @@ function togglePlayPause() {
 }
 
 pauseplay.addEventListener('click', togglePlayPause)
+function startChat() {
+    const loadingIcon = document.querySelector('.loading-icon');
+    loadingIcon.style.display = 'block';
+    userProfile.style.display = 'none';
+    onlineUsers.style.display = 'none';
+    setTimeout(() => {
+        loadingIcon.style.display = 'none';
+        userProfile.style.display = 'block';
+
+    }, 2000);
+    const startNewChatBtn = document.getElementById('start-new-chat');
+    startNewChatBtn.innerText = "Next";
+
+    startNewChatBtn.addEventListener('click', () => {
+        const newButtonsContainer = document.querySelector('.new-buttons');
+        newButtonsContainer.style.display = newButtonsContainer.style.display === 'none' ? 'block' : 'none';
+    });
+}
+
+const startNewChatBtn = document.getElementById('start-new-chat');
+startNewChatBtn.addEventListener('click', startChat);
