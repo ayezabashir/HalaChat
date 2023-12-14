@@ -11,6 +11,8 @@ const nextBtn = document.getElementById('next');
 const stopBtn = document.getElementById('stop');
 const microphoneBtn = document.getElementById('micBtn');
 const volumeBtn = document.getElementById('volumeBtn');
+const mediaBtn = document.getElementById('mediaBtn');
+const mediaOptions = document.querySelector('.media-options');
 
 const languages = [
     'Spanish', 'French', 'German', 'Chinese', 'Japanese', 'Arabic', 'Russian',
@@ -124,11 +126,9 @@ stopBtn.addEventListener('click', () => {
 
 microphoneBtn.addEventListener('click', () => {
     if (microphoneBtn.classList.contains("fa-microphone")) {
-        // If it's currently showing the volume icon, change it to mute icon
         microphoneBtn.classList.remove("fa-microphone");
         microphoneBtn.classList.add("fa-microphone-slash");
     } else {
-        // If it's currently showing the mute icon, change it to volume icon
         microphoneBtn.classList.remove("fa-microphone-slash");
         microphoneBtn.classList.add("fa-microphone");
     }
@@ -136,12 +136,16 @@ microphoneBtn.addEventListener('click', () => {
 
 volumeBtn.addEventListener('click', () => {
     if (volumeBtn.classList.contains("fa-volume-down")) {
-        // If it's currently showing the volume icon, change it to mute icon
         volumeBtn.classList.remove("fa-volume-down");
         volumeBtn.classList.add("fa-volume-times");
     } else {
-        // If it's currently showing the mute icon, change it to volume icon
         volumeBtn.classList.remove("fa-volume-times");
         volumeBtn.classList.add("fa-volume-down");
     }
+})
+
+mediaBtn.addEventListener('click', () => {
+    console.log('hi')
+    mediaOptions.classList.toggle('d-none');
+
 })

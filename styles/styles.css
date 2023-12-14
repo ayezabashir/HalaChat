@@ -224,6 +224,18 @@ input:focus {
               margin-right: 5px;
               cursor: pointer;
             }
+
+            .fa-plus {
+              position: relative;
+              .media-options {
+                position: absolute;
+                top: -30px;
+                .media-opt {
+                  width: 20px !important;
+                  height: 20px !important;
+                }
+              }
+            }
             .emoji {
               padding-left: 5px;
             }
@@ -236,6 +248,35 @@ input:focus {
               margin-left: 10px;
               margin-right: 0;
             }
+          }
+        }
+      }
+      .actual-chat {
+        position: absolute;
+        bottom: 7%;
+        width: 100%;
+        .left-text {
+          left: 0;
+        }
+        .right-text {
+          right: 0;
+        }
+        .text-whole {
+          .img {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            margin-right: 5px;
+            margin-left: 5px;
+            .text-user-img {
+              border-radius: 50%;
+              width: inherit;
+              height: inherit;
+            }
+          }
+          .text {
+            max-width: 200px;
+            background: #6828a7;
           }
         }
       }
