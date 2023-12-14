@@ -5,9 +5,12 @@ const startNewChat = document.getElementById('start-new-chat');
 const userProfile = document.getElementById('user-profile')
 const startNewChatBtn = document.getElementById('start-new-chat');
 const onlineUsers = document.getElementById('online-users');
+const users = document.getElementById('two-users');
 const startChatText = document.getElementById('start-voice-chat');
 const nextBtn = document.getElementById('next');
 const stopBtn = document.getElementById('stop');
+const microphoneBtn = document.getElementById('micBtn');
+const volumeBtn = document.getElementById('volumeBtn');
 
 const languages = [
     'Spanish', 'French', 'German', 'Chinese', 'Japanese', 'Arabic', 'Russian',
@@ -92,15 +95,18 @@ function startChat() {
     onlineUsers.style.opacity = '0';
     setTimeout(() => {
         loadingIcon.style.display = 'none';
-        userProfile.style.display = 'block';
         startChatText.innerText = 'Your partner from Turkey'
+        startChatText.style.paddingTop = '2rem'
         nextBtn.classList.remove('d-none');
         nextBtn.classList.remove('disabled');
+        users.classList.remove('d-none');
         stopBtn.classList.remove('disabled');
+        onlineUsers.style.display = 'none'
     }, 2000);
     stopBtn.classList.add('disabled');
     startNewChatBtn.style.display = 'none';
     nextBtn.classList.add('disabled');
+    users.classList.add('d-none');
     nextBtn.classList.remove('d-none');
 }
 
@@ -114,4 +120,28 @@ nextBtn.addEventListener('click', () => {
 stopBtn.addEventListener('click', () => {
     const newStopButtonsContainer = document.querySelector('.new-stop-buttons');
     newStopButtonsContainer.style.display = newStopButtonsContainer.style.display === 'none' ? 'block' : 'none';
+})
+
+microphoneBtn.addEventListener('click', () => {
+    if (microphoneBtn.classList.contains("fa-microphone")) {
+        // If it's currently showing the volume icon, change it to mute icon
+        microphoneBtn.classList.remove("fa-microphone");
+        microphoneBtn.classList.add("fa-microphone-slash");
+    } else {
+        // If it's currently showing the mute icon, change it to volume icon
+        microphoneBtn.classList.remove("fa-microphone-slash");
+        microphoneBtn.classList.add("fa-microphone");
+    }
+})
+
+volumeBtn.addEventListener('click', () => {
+    if (volumeBtn.classList.contains("fa-volume-down")) {
+        // If it's currently showing the volume icon, change it to mute icon
+        volumeBtn.classList.remove("fa-volume-down");
+        volumeBtn.classList.add("fa-volume-times");
+    } else {
+        // If it's currently showing the mute icon, change it to volume icon
+        volumeBtn.classList.remove("fa-volume-times");
+        volumeBtn.classList.add("fa-volume-down");
+    }
 })
