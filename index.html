@@ -113,7 +113,7 @@
                     </p>
                   </div>
                 </div>
-                <h6 class="text-white semi-bold">
+                <h6 class="text-white semi-bold" id="start-voice-chat">
                   Tap the
                   <span class="text-green">START VOICE CHAT</span> button to
                   call new stranger
@@ -146,9 +146,17 @@
                     <span class="fa fa-microphone"></span>
                     start new chat
                   </button>
+                  <button
+                    id="next"
+                    class="btn d-none p-2 text-uppercase text-white font-semi-bold"
+                  >
+                    <span class="fa fa-chevron-right"></span>
+                    Next
+                  </button>
                 </div>
                 <div class="chat-stop w-25">
                   <button
+                    id="stop"
                     class="btn p-2 text-uppercase text-white font-semi-bold"
                   >
                     <span class="fa fa-stop-circle"></span>
@@ -238,6 +246,30 @@
           <button class="btn p-2 text-uppercase text-white font-semi-bold">
             <span class="fa fa-play"></span>
             are you sure
+          </button>
+        </div>
+      </div>
+      <div class="new-stop-buttons" style="display: none">
+        <div class="chat-stop mb-2">
+          <button class="btn p-2 px-3 text-uppercase text-white font-semi-bold">
+            <span class="fa fa-pause"></span>
+            Stop
+          </button>
+        </div>
+        <div class="chat-stop mb-2">
+          <button
+            class="btn p-2 px-3 text-uppercase bg-green text-white font-semi-bold"
+          >
+            <span class="fa fa-pause"></span>
+            Sure?
+          </button>
+        </div>
+        <div class="chat-stop mb-2">
+          <button
+            class="btn disabled p-2 px-3 text-uppercase text-white font-semi-bold"
+          >
+            <span class="fa fa-pause"></span>
+            Stop
           </button>
         </div>
       </div>

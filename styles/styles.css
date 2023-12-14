@@ -61,8 +61,9 @@ input:focus {
 }
 
 .disabled {
-  background: gray !important;
+  background: rgb(189, 189, 189) !important;
   outline: none;
+  color: #fff !important;
   border: none;
 }
 
@@ -214,6 +215,20 @@ input:focus {
       width: 100% !important;
       .btn {
         width: inherit;
+        background: #16b501;
+      }
+    }
+  }
+  .new-stop-buttons {
+    position: absolute;
+    bottom: 10%;
+    right: 51%;
+    padding: 0 0 0 20px;
+    .chat-stop {
+      .btn {
+        background: #9f0eaf;
+      }
+      .bg-green {
         background: #16b501;
       }
     }
@@ -383,6 +398,12 @@ input:focus {
       text-align: center !important;
       transform: translateX(-50px);
     }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .voice-chat-room {
+    height: auto !important;
   }
 }
 

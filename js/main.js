@@ -3,7 +3,11 @@ const toggleTagsBtn = document.getElementById('toggleTags');
 const pauseplay = document.getElementById('play-pause-button');
 const startNewChat = document.getElementById('start-new-chat');
 const userProfile = document.getElementById('user-profile')
+const startNewChatBtn = document.getElementById('start-new-chat');
 const onlineUsers = document.getElementById('online-users');
+const startChatText = document.getElementById('start-voice-chat');
+const nextBtn = document.getElementById('next');
+const stopBtn = document.getElementById('stop');
 
 const languages = [
     'Spanish', 'French', 'German', 'Chinese', 'Japanese', 'Arabic', 'Russian',
@@ -85,20 +89,29 @@ function startChat() {
     const loadingIcon = document.querySelector('.loading-icon');
     loadingIcon.style.display = 'block';
     userProfile.style.display = 'none';
-    onlineUsers.style.display = 'none';
+    onlineUsers.style.opacity = '0';
     setTimeout(() => {
         loadingIcon.style.display = 'none';
         userProfile.style.display = 'block';
-
+        startChatText.innerText = 'Your partner from Turkey'
+        nextBtn.classList.remove('d-none');
+        nextBtn.classList.remove('disabled');
+        stopBtn.classList.remove('disabled');
     }, 2000);
-    const startNewChatBtn = document.getElementById('start-new-chat');
-    startNewChatBtn.innerText = "Next";
-
-    startNewChatBtn.addEventListener('click', () => {
-        const newButtonsContainer = document.querySelector('.new-buttons');
-        newButtonsContainer.style.display = newButtonsContainer.style.display === 'none' ? 'block' : 'none';
-    });
+    stopBtn.classList.add('disabled');
+    startNewChatBtn.style.display = 'none';
+    nextBtn.classList.add('disabled');
+    nextBtn.classList.remove('d-none');
 }
 
-const startNewChatBtn = document.getElementById('start-new-chat');
 startNewChatBtn.addEventListener('click', startChat);
+
+nextBtn.addEventListener('click', () => {
+    const newButtonsContainer = document.querySelector('.new-buttons');
+    newButtonsContainer.style.display = newButtonsContainer.style.display === 'none' ? 'block' : 'none';
+});
+
+stopBtn.addEventListener('click', () => {
+    const newStopButtonsContainer = document.querySelector('.new-stop-buttons');
+    newStopButtonsContainer.style.display = newStopButtonsContainer.style.display === 'none' ? 'block' : 'none';
+})
