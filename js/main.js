@@ -13,6 +13,7 @@ const microphoneBtn = document.getElementById('micBtn');
 const volumeBtn = document.getElementById('volumeBtn');
 const mediaBtn = document.getElementById('mediaBtn');
 const mediaOptions = document.querySelector('.media-options');
+const changeUserIcon = document.getElementById('change-user-icon');
 
 const languages = [
     'Spanish', 'French', 'German', 'Chinese', 'Japanese', 'Arabic', 'Russian',
