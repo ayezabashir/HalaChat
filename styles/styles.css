@@ -184,6 +184,12 @@ input:focus {
         width: 100px;
       }
     }
+    .msg-icon {
+      .fa-regular {
+        color: #fff;
+        text-align: center;
+      }
+    }
     .chat-options {
       width: 100%;
       margin-top: 57px;
@@ -613,6 +619,7 @@ input:focus {
     margin: 0 5rem;
   }
   .logo-container {
+    background: #17082b;
     display: flex !important;
     align-items: end !important;
   }
@@ -675,6 +682,21 @@ input:focus {
 }
 
 @media screen and (max-width: 540px) {
+  .hala-top-section {
+    width: 100vw;
+    .logo-container {
+      padding: 20px !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important ;
+    }
+    .voice-chat-room {
+      width: 100%;
+      padding: 20px !important;
+    }
+    .text-chat-room {
+      width: 100%;
+    }
+  }
   .menu-bar {
     display: flex;
     .menu-container {
