@@ -189,6 +189,8 @@ input:focus {
       .fa-regular {
         color: #fff;
         text-align: center;
+        font-size: 25px;
+        margin-top: 20px;
       }
     }
     .chat-options {
@@ -340,9 +342,19 @@ input:focus {
         }
       }
       .notification {
+        position: relative;
         .fa-bell {
           font-size: 25px;
           color: #fff;
+        }
+        .notif-red {
+          position: absolute;
+          top: 0;
+          right: 6px;
+          height: 8px;
+          width: 8px;
+          border-radius: 50%;
+          background: red;
         }
       }
       .earth {
@@ -619,8 +631,9 @@ input:focus {
 @media screen and (max-width: 998px) {
   .menu-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 90px !important;
   }
   .hala-top-section {
     .select-avatar {
@@ -635,6 +648,7 @@ input:focus {
   .top-section {
     display: flex !important;
     align-items: flex-end !important;
+    margin-right: 20px;
     .img {
       cursor: pointer;
       width: 35px;
@@ -648,9 +662,19 @@ input:focus {
       }
     }
     .notification {
+      position: relative;
       .fa-bell {
         font-size: 25px;
         color: #fff;
+      }
+      .notif-red {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background: red;
       }
     }
     .earth {
@@ -665,9 +689,11 @@ input:focus {
   }
   .hala-top-section {
     .new-buttons {
-      top: 30%;
+      height: 100px;
+      top: 40%;
     }
     .new-stop-buttons {
+      height: 100px;
       top: 35%;
       right: 10%;
     }
@@ -703,6 +729,9 @@ input:focus {
             height: auto;
             margin-right: 0;
           }
+          .global-text {
+            padding: 0 77px;
+          }
         }
       }
     }
@@ -710,6 +739,63 @@ input:focus {
 }
 
 @media screen and (max-width: 540px) {
+  .hala-top-section {
+    .logo-container {
+      margin: 0 5px;
+      width: 100vw;
+    }
+    .voice-chat-room {
+      height: 450px !important;
+      width: auto;
+      padding: 20px !important;
+      .form-check {
+        margin-top: 0 !important;
+      }
+      .chat-options {
+        width: 80%;
+        margin: 30px auto 0 auto;
+        .chat-start {
+          width: 100% !important;
+        }
+        .chat-stop {
+          width: 50% !important;
+        }
+      }
+    }
+    .text-chat {
+      width: 100%;
+      .text-chat-room {
+        height: 420px;
+        width: 100%;
+        .chat-room-container {
+          .chat-input-options {
+            .input {
+              .input-text {
+                width: 74%;
+              }
+            }
+          }
+        }
+      }
+      .hala-chat-options {
+        display: none !important;
+      }
+    }
+  }
+  .menu-container {
+    margin: 0 !important;
+    display: flex;
+    justify-content: space-around;
+    .menu-list {
+      .menu-list-items {
+        font-size: 12px !important;
+      }
+    }
+  }
+
+  .global-text {
+    padding: 0 !important;
+  }
   .voice-chat-features {
     .voice-chat-container {
       .voice-chat-content {
