@@ -373,9 +373,10 @@ input:focus {
   }
   .select-avatar {
     position: absolute;
-    bottom: 0%;
+    bottom: -86%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
     .avatar-container {
       background: #fff;
       .container {
@@ -433,13 +434,14 @@ input:focus {
   background: #ffa934;
   .menu-container {
     background: #ffa934;
-    max-width: 900px;
+    max-width: 950px;
+    margin: 0 auto;
     .menu-list {
       display: flex;
-      margin: 0 auto;
       .menu-list-items {
         font-size: 18px;
         padding: 15px 10px;
+        padding-left: 0;
         cursor: pointer;
       }
     }
@@ -463,7 +465,7 @@ input:focus {
 .hala-global {
   .hala-global-container {
     display: flex;
-    max-width: 780px;
+    max-width: 800px;
     margin: 0 auto;
     .hala-global-content {
       .header {
@@ -617,8 +619,13 @@ input:focus {
 @media screen and (max-width: 998px) {
   .menu-container {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    margin: 0 5rem;
+  }
+  .hala-top-section {
+    .select-avatar {
+      bottom: 0;
+    }
   }
   .logo-container {
     background: #17082b;
@@ -681,33 +688,41 @@ input:focus {
       }
     }
   }
-}
-
-@media screen and (max-width: 540px) {
-  .hala-top-section {
-    width: 100vw;
-    .logo-container {
-      padding: 20px !important;
-      padding-top: 0 !important;
-      padding-bottom: 0 !important ;
-    }
-    .voice-chat-room {
-      width: 100%;
-      padding: 20px !important;
-    }
-    .text-chat-room {
-      width: 100%;
-    }
-  }
-  .menu-bar {
-    .menu-container {
-      width: 100%;
-      .menu-list {
-        .menu-list-items {
-          padding-left: 0 !important;
-          padding-right: 10px !important;
+  .hala-global {
+    .hala-global-container {
+      .hala-global-content {
+        width: 100%;
+        .header {
+          .text-uppercase {
+            white-space: breakspace;
+          }
+        }
+        .hala-global-desc {
+          .global-vid {
+            width: 250px;
+            height: auto;
+            margin-right: 0;
+          }
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .voice-chat-features {
+    .voice-chat-container {
+      .voice-chat-content {
+        .cards {
+          .card-container {
+            width: 300px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+  .copyrights {
+    transform: translateX(0) !important;
   }
 }
