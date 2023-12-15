@@ -30,8 +30,27 @@
   <body>
     <div class="hala-top-section d-flex justify-content-center mt-2">
       <div class="hala-container">
-        <div class="logo-container justify-content-start">
+        <div
+          class="logo-container justify-content-start d-flex align-items-center justify-content-between"
+        >
           <img class="logo" src="/assets/LOGO-T.png" alt="halachat logo" />
+          <div
+            class="top-section mb-3 d-lg-none d-flex flex-row-reverse gap-2 justify-content-center align-content-end"
+          >
+            <div class="img rounded" id="change-user-icon-sm">
+              <img class="user-img rounded" src="/assets/user.png" alt="" />
+            </div>
+            <div class="notification mt-3 text-center">
+              <span class="fa fa-bell"></span>
+            </div>
+            <div class="earth mt-2">
+              <img
+                class="earth-icon"
+                src="/assets//earth-language.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
         <div class="chat-room-container">
           <div
@@ -335,7 +354,7 @@
 
             <!-- Side Bar -->
             <div
-              class="side-bar d-flex flex-column justify-content-between align-items-center"
+              class="side-bar d-lg-block d-none d-flex flex-column justify-content-between align-items-center"
             >
               <div
                 class="top-section d-flex flex-column justify-content-center align-content-center"
@@ -560,12 +579,38 @@
     <!-- Menu Section -->
     <div class="menu-bar mt-5">
       <div class="menu-container">
-        <ul class="menu-list">
+        <ul class="menu-list p-0">
           <li class="text-white menu-list-items">Start</li>
           <li class="text-white menu-list-items font-bold">About Chat</li>
           <li class="text-white menu-list-items">Rules</li>
           <li class="text-white menu-list-items">Contact us</li>
         </ul>
+        <div class="dropdown dropleft d-lg-none d-block">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <div
+            class="dropdown-menu rounded-0"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <a class="dropdown-item text-capitalize border-bottom" href="#"
+              >terms of services</a
+            >
+            <a class="dropdown-item text-capitalize border-bottom" href="#"
+              >privacy policy</a
+            >
+            <a class="dropdown-item text-capitalize border-bottom" href="#"
+              >community</a
+            >
+          </div>
+        </div>
       </div>
     </div>
 

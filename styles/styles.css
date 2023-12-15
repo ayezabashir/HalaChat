@@ -425,14 +425,27 @@ input:focus {
 .menu-bar {
   background: #ffa934;
   .menu-container {
+    max-width: 900px;
     .menu-list {
       display: flex;
       margin: 0 auto;
-      max-width: 1000px;
       .menu-list-items {
         font-size: 18px;
         padding: 15px 10px;
         cursor: pointer;
+      }
+    }
+    .dropdown {
+      .dropdown-toggle {
+        outline: none;
+        border: none;
+        background: #530988;
+        .fa-bars {
+          color: #fff;
+        }
+        &::after {
+          display: none !important;
+        }
       }
     }
   }
@@ -593,6 +606,58 @@ input:focus {
   }
 }
 
+@media screen and (max-width: 998px) {
+  .menu-container {
+    display: flex;
+    align-items: center;
+    margin: 0 5rem;
+  }
+  .logo-container {
+    display: flex !important;
+    align-items: end !important;
+  }
+  .top-section {
+    display: flex !important;
+    align-items: flex-end !important;
+    .img {
+      cursor: pointer;
+      width: 35px;
+      height: 35px;
+      overflow: hidden;
+      background: #d10084;
+      border: 2px solid #e6399e;
+      .user-img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .notification {
+      .fa-bell {
+        font-size: 25px;
+        color: #fff;
+      }
+    }
+    .earth {
+      width: 35px;
+      height: 35px;
+      overflow: hidden;
+      .earth-icon {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .hala-top-section {
+    .new-buttons {
+      top: 30%;
+    }
+    .new-stop-buttons {
+      top: 35%;
+      right: 10%;
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   /* Voice Chat Features */
   .voice-chat-features {
@@ -603,6 +668,21 @@ input:focus {
             width: 390px;
             height: auto;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .menu-bar {
+    display: flex;
+    .menu-container {
+      width: 100%;
+      .menu-list {
+        .menu-list-items {
+          padding-left: 0 !important;
+          padding-right: 10px !important;
         }
       }
     }

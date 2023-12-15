@@ -15,6 +15,7 @@ const mediaBtn = document.getElementById('mediaBtn');
 const mediaOptions = document.querySelector('.media-options');
 const changeUserIcon = document.getElementById('change-user-icon');
 const avtars = document.querySelector('.select-avatar');
+const changerUserIconSm = document.getElementById('change-user-icon-sm');
 
 const languages = [
     'Spanish', 'French', 'German', 'Chinese', 'Japanese', 'Arabic', 'Russian',
@@ -154,4 +155,9 @@ mediaBtn.addEventListener('click', () => {
 
 changeUserIcon.addEventListener('click', () => {
     avtars.classList.toggle('d-none')
+})
+
+changerUserIconSm.addEventListener('click', () => {
+    avtars.classList.toggle('d-none')
+
 })
