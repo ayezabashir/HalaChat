@@ -418,7 +418,7 @@ input:focus {
   .new-buttons {
     position: absolute;
     bottom: 10%;
-    left: 0;
+    left: 10%;
     padding: 0 0 0 20px;
     .chat-start {
       width: 100% !important;
@@ -615,6 +615,7 @@ input:focus {
       .social-icons {
         width: 30px;
         cursor: pointer;
+        padding-right: 5px;
       }
     }
     .copyrights {
@@ -746,7 +747,7 @@ input:focus {
 @media screen and (max-width: 540px) {
   .hala-top-section {
     .logo-container {
-      margin: 0 5px;
+      margin: 0;
       width: 100vw;
     }
     .voice-chat-room {
@@ -793,7 +794,7 @@ input:focus {
       }
     }
     .new-buttons {
-      top: 50% !important;
+      top: 40% !important;
     }
     .new-stop-buttons {
       top: 50% !important;
