@@ -426,6 +426,9 @@ input:focus {
         width: inherit;
         background: #16b501;
       }
+      .bg-yellow {
+        background: rgb(213, 213, 9);
+      }
     }
   }
   .new-stop-buttons {
@@ -441,6 +444,9 @@ input:focus {
       }
       .bg-green {
         background: #16b501;
+      }
+      .bg-yellow {
+        background: rgb(213, 213, 9);
       }
     }
   }
