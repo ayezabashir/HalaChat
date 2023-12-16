@@ -229,17 +229,20 @@
                   </button>
                 </div>
               </div>
-              <div class="msg-icon text-center mt-3 d-lg-none d-block">
+              <div
+                id="msg-icon"
+                class="msg-icon text-center mt-2 d-lg-none d-block"
+              >
                 <span class="fa-regular fa-message"></span>
               </div>
             </div>
 
             <!-- Text chat room -->
-            <div class="text-chat">
+            <div class="text-chat d-none d-lg-block" id="text-chat">
               <div class="text-chat-room">
                 <div class="chat-room-container">
                   <div class="chat-input-options">
-                    <div class="input px-2 py-2">
+                    <div class="input px-4 px-md-2 py-2">
                       <span class="emoji fa fa-face-laugh-beam"></span>
                       <span class="fa fa-plus" id="mediaBtn">
                         <span
@@ -264,7 +267,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="actual-chat p-2">
+                <div class="actual-chat">
                   <div class="left-text mb-3">
                     <div class="text-whole d-flex">
                       <div class="img">

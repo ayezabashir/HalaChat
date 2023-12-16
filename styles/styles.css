@@ -45,6 +45,10 @@ li {
   list-style: none;
 }
 
+ul {
+  margin-bottom: 0 !important;
+}
+
 input:focus {
   outline: #8e91ff !important;
   border: 1px solid #8e91ff;
@@ -266,6 +270,7 @@ input:focus {
         position: absolute;
         bottom: 7%;
         width: 100%;
+        padding: 20px !important;
         .left-text {
           left: 0;
         }
@@ -748,6 +753,12 @@ input:focus {
       height: 450px !important;
       width: auto;
       padding: 20px !important;
+      .voice-chat-room-content {
+        .text-white {
+          padding: 0 6px;
+          text-align: center;
+        }
+      }
       .form-check {
         margin-top: 0 !important;
       }
@@ -781,14 +792,30 @@ input:focus {
         display: none !important;
       }
     }
+    .new-buttons {
+      top: 50% !important;
+    }
+    .new-stop-buttons {
+      top: 50% !important;
+      right: 0;
+    }
   }
   .menu-container {
     margin: 0 !important;
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
     .menu-list {
       .menu-list-items {
-        font-size: 12px !important;
+        font-size: 14px !important;
+      }
+    }
+    .dropdown {
+      .btn-secondary {
+        font-size: 6px;
+        .fa-bars {
+          font-size: 12px;
+        }
       }
     }
   }
