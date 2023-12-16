@@ -835,6 +835,10 @@ input:focus {
       }
     }
   }
+  .select-avatar {
+    top: 45% !important;
+    bottom: 0 !important;
+  }
   .voice-chat-features {
     .voice-chat-container {
       .voice-chat-content {
