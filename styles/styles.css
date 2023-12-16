@@ -403,6 +403,10 @@ input:focus {
               cursor: pointer;
               border-radius: 50%;
             }
+            .cat-img {
+              width: 30px;
+              border-radius: 50%;
+            }
             .next-avatar {
               width: 40px;
             }
