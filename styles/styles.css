@@ -390,7 +390,7 @@ input:focus {
   }
   .select-avatar {
     position: absolute;
-    bottom: -86%;
+    bottom: -110%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;

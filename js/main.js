@@ -157,11 +157,14 @@ mediaBtn.addEventListener('click', () => {
 
 changeUserIcon.addEventListener('click', () => {
     avtars.classList.toggle('d-none')
+    const selectAvatarDiv = document.getElementById('select-avatar');
+    if (selectAvatarDiv) {
+        selectAvatarDiv.scrollIntoView({ behavior: 'smooth' });
+    }
 })
 
 changerUserIconSm.addEventListener('click', () => {
-    avtars.classList.toggle('d-none')
-
+    avtars.classList.toggle('d-none');
 })
 
 msgIcon.addEventListener('click', () => {
