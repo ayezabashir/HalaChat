@@ -402,13 +402,14 @@ input:focus {
             .avatar-img {
               cursor: pointer;
               border-radius: 50%;
+              width: 50px;
             }
             .cat-img {
-              width: 30px;
+              width: 40px;
               border-radius: 50%;
             }
             .next-avatar {
-              width: 40px;
+              width: 50px;
             }
           }
           .btn-avatar {
