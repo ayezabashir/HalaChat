@@ -479,11 +479,11 @@ input:focus {
   }
   .new-buttons {
     position: absolute;
-    bottom: 10%;
+    bottom: 13%;
     left: 4%;
     padding: 0 0 0 20px;
     .chat-start {
-      width: 100% !important;
+      width: 220px !important;
       .btn {
         width: inherit;
         background: #16b501;
@@ -495,11 +495,11 @@ input:focus {
   }
   .new-stop-buttons {
     position: absolute;
-    bottom: 10%;
+    bottom: 13%;
     right: 51%;
     padding: 0 20px 0 0;
     .chat-stop {
-      width: 100%;
+      width: 95px;
       .btn {
         width: 100%;
         background: #9f0eaf;

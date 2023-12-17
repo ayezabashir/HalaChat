@@ -18,6 +18,7 @@ const avtars = document.querySelector('.select-avatar');
 const changerUserIconSm = document.getElementById('change-user-icon-sm');
 const msgIcon = document.getElementById('msg-icon');
 const textChat = document.getElementById('text-chat');
+const freeChatLink = document.getElementById('free-chat-Btn');
 
 const languages = [
     'Spanish', 'French', 'German', 'Chinese', 'Japanese', 'Arabic', 'Russian',
@@ -224,6 +225,13 @@ aboutLink.addEventListener('click', () => {
 })
 
 startLink.addEventListener('click', () => {
+    const startSection = document.getElementById('start-section');
+    if (startSection) {
+        startSection.scrollIntoView({ behavior: 'smooth' });
+    }
+})
+
+freeChatLink.addEventListener('click', () => {
     const startSection = document.getElementById('start-section');
     if (startSection) {
         startSection.scrollIntoView({ behavior: 'smooth' });
