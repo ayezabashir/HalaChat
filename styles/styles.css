@@ -79,6 +79,9 @@ input:focus {
 }
 
 .hala-top-section {
+  display: flex !important;
+  align-items: center;
+  min-height: 100vh;
   position: relative;
   .logo-container {
     margin: 0 auto;
@@ -545,6 +548,10 @@ input:focus {
 
 /* Global Voice Chat */
 .hala-global {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .hala-global-container {
     display: flex;
     max-width: 800px;
@@ -582,6 +589,9 @@ input:focus {
 
 /* Voice Chat Features */
 .voice-chat-features {
+  display: flex !important;
+  align-items: center;
+  min-height: 100vh;
   .voice-chat-container {
     max-width: 780px;
     margin: 0 auto;
@@ -846,6 +856,7 @@ input:focus {
 
 @media screen and (max-width: 540px) {
   .hala-top-section {
+    align-items: baseline;
     .logo-container {
       margin: 0;
       width: 100vw;
@@ -932,6 +943,7 @@ input:focus {
         .global-text {
           font-size: 14px !important;
           padding: 0 !important;
+          margin-top: 30px;
         }
       }
     }
@@ -975,6 +987,13 @@ input:focus {
           font-size: 11px;
         }
       }
+    }
+  }
+
+  .wave-final {
+    .wave-final-img {
+      margin-top: 27px;
+      transform: scale(1.5);
     }
   }
 
