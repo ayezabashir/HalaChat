@@ -78,10 +78,11 @@ input:focus {
   border: none;
 }
 
+.bg-yellow {
+  background: rgb(197, 197, 6);
+}
+
 .hala-top-section {
-  display: flex !important;
-  align-items: center;
-  min-height: 100vh;
   position: relative;
   .logo-container {
     margin: 0 auto;
@@ -150,8 +151,8 @@ input:focus {
                 position: absolute;
                 bottom: 0px;
                 right: 0;
-                width: 25px;
-                height: 25px;
+                width: 28px;
+                height: 28px;
                 border-radius: 50px !important;
                 overflow: hidden;
                 .flag-svg {
@@ -176,8 +177,8 @@ input:focus {
                 position: absolute;
                 bottom: 0px;
                 right: 0;
-                width: 25px;
-                height: 25px;
+                width: 28px;
+                height: 28px;
                 border-radius: 50px !important;
                 overflow: hidden;
                 .flag-svg {
@@ -233,6 +234,9 @@ input:focus {
         .btn {
           background: #9f0faf;
           width: 100%;
+        }
+        .bg-yellow {
+          background: #ffbf00;
         }
       }
     }
@@ -477,41 +481,6 @@ input:focus {
       }
     }
   }
-  .new-buttons {
-    position: absolute;
-    bottom: 13%;
-    left: 4%;
-    padding: 0 0 0 20px;
-    .chat-start {
-      width: 220px !important;
-      .btn {
-        width: inherit;
-        background: #16b501;
-      }
-      .bg-yellow {
-        background: rgb(213, 213, 9);
-      }
-    }
-  }
-  .new-stop-buttons {
-    position: absolute;
-    bottom: 13%;
-    right: 51%;
-    padding: 0 20px 0 0;
-    .chat-stop {
-      width: 95px;
-      .btn {
-        width: 100%;
-        background: #9f0eaf;
-      }
-      .bg-green {
-        background: #16b501;
-      }
-      .bg-yellow {
-        background: rgb(213, 213, 9);
-      }
-    }
-  }
 }
 
 /* Menu Bar */
@@ -548,10 +517,6 @@ input:focus {
 
 /* Global Voice Chat */
 .hala-global {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   .hala-global-container {
     display: flex;
     max-width: 800px;
@@ -589,9 +554,6 @@ input:focus {
 
 /* Voice Chat Features */
 .voice-chat-features {
-  display: flex !important;
-  align-items: center;
-  min-height: 100vh;
   .voice-chat-container {
     max-width: 780px;
     margin: 0 auto;
@@ -803,18 +765,6 @@ input:focus {
       }
     }
   }
-  .hala-top-section {
-    align-items: baseline;
-    .new-buttons {
-      height: 100px;
-      top: 45%;
-    }
-    .new-stop-buttons {
-      height: 100px;
-      top: 45%;
-      right: 10%;
-    }
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -857,7 +807,6 @@ input:focus {
 
 @media screen and (max-width: 540px) {
   .hala-top-section {
-    align-items: baseline;
     .logo-container {
       margin: 0;
       width: 100vw;
@@ -904,13 +853,6 @@ input:focus {
       .hala-chat-options {
         display: none !important;
       }
-    }
-    .new-buttons {
-      top: 45% !important;
-    }
-    .new-stop-buttons {
-      top: 50% !important;
-      right: 0;
     }
   }
   .menu-container {

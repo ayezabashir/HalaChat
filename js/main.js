@@ -150,24 +150,22 @@ nextBtn.addEventListener('click', () => {
     });
 });
 
+const stopBtn1 = document.getElementById('stop-Btn1');
+const stopBtn2 = document.getElementById('stop-Btn2');
+
 stopBtn.addEventListener('click', () => {
-    const newStopButtonsContainer = document.querySelector('.new-stop-buttons');
-    newStopButtonsContainer.style.display = newStopButtonsContainer.style.display === 'none' ? 'block' : 'none';
-    var btn1 = document.getElementById("stop-Btn1");
-    var btn2 = document.getElementById("stop-Btn2");
-    var btn3 = document.getElementById("stop-Btn3");
+    stopBtn1.classList.remove('d-none');
+    stopBtn.classList.add('d-none');
+})
 
-    btn1.querySelector("button").addEventListener("click", function () {
-        btn2.style.display = "block";
-        btn1.style.display = "none";
-        btn3.style.display = "none";
-    });
+stopBtn1.addEventListener('click', () => {
+    stopBtn1.classList.add('d-none');
+    stopBtn2.classList.remove('d-none');
+})
 
-    btn2.querySelector("button").addEventListener("click", function () {
-        btn3.style.display = "block";
-        btn1.style.display = "none";
-        btn2.style.display = "none";
-    });
+stopBtn2.addEventListener('click', () => {
+    stopBtn2.classList.add('d-none');
+    stopBtn.classList.remove('d-none');
 })
 
 microphoneBtn.addEventListener('click', () => {
