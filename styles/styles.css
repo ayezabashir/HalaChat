@@ -459,8 +459,9 @@ input:focus {
   border: 0;
 }
 .avatar-model {
+  top: 15% !important;
   .modal-dialog {
-    width: 350px !important;
+    width: 300px !important;
     .avatar-container {
       background: #fff;
       .container {
@@ -472,14 +473,14 @@ input:focus {
             .avatar-img {
               cursor: pointer;
               border-radius: 50%;
-              width: 50px;
+              width: 40px;
             }
             .cat-img {
-              width: 40px;
+              width: 30px;
               border-radius: 50%;
             }
             .next-avatar {
-              width: 50px;
+              width: 40px;
             }
           }
           .btn-avatar {
