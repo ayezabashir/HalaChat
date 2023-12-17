@@ -9,8 +9,7 @@
 
 body {
   background: url("/assets/bg.webp");
-  background-position: center center;
-  background-size: cover;
+  background-position: left;
   background-color: #000113;
   background-repeat: no-repeat;
 }
