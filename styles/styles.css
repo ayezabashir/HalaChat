@@ -71,6 +71,13 @@ input:focus {
   border: none;
 }
 
+.disabled-Btn {
+  background: rgb(189, 189, 189) !important;
+  outline: none;
+  color: #fff !important;
+  border: none;
+}
+
 .hala-top-section {
   position: relative;
   .logo-container {
@@ -961,8 +968,21 @@ input:focus {
     }
   }
 
+  .lang-opt {
+    .lang-opt-container {
+      .lang-opt-content {
+        .tag {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
   .free-chat {
     .free-chat-container {
+      .text-white {
+        font-size: 12px;
+      }
       .btn-free-chat {
         width: 180px;
         height: 48px;

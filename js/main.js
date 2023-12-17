@@ -122,11 +122,51 @@ startNewChatBtn.addEventListener('click', startChat);
 nextBtn.addEventListener('click', () => {
     const newButtonsContainer = document.querySelector('.new-buttons');
     newButtonsContainer.style.display = newButtonsContainer.style.display === 'none' ? 'block' : 'none';
+    var btn1 = document.getElementById("new-Btn1");
+    var btn2 = document.getElementById("new-Btn2");
+    var btn3 = document.getElementById("new-Btn3");
+    var btn4 = document.getElementById("new-Btn4");
+
+    btn1.querySelector("button").addEventListener("click", function () {
+        btn2.style.display = "block";
+        btn1.style.display = "none";
+        btn3.style.display = "none";
+        btn4.style.display = "none";
+    });
+
+    btn2.querySelector("button").addEventListener("click", function () {
+        btn3.style.display = "block";
+        btn1.style.display = "none";
+        btn2.style.display = "none";
+        btn4.style.display = "none";
+    });
+
+    btn3.querySelector("button").addEventListener("click", function () {
+        btn4.style.display = "block";
+        btn1.style.display = "none";
+        btn2.style.display = "none";
+        btn3.style.display = "none";
+    });
 });
 
 stopBtn.addEventListener('click', () => {
     const newStopButtonsContainer = document.querySelector('.new-stop-buttons');
     newStopButtonsContainer.style.display = newStopButtonsContainer.style.display === 'none' ? 'block' : 'none';
+    var btn1 = document.getElementById("stop-Btn1");
+    var btn2 = document.getElementById("stop-Btn2");
+    var btn3 = document.getElementById("stop-Btn3");
+
+    btn1.querySelector("button").addEventListener("click", function () {
+        btn2.style.display = "block";
+        btn1.style.display = "none";
+        btn3.style.display = "none";
+    });
+
+    btn2.querySelector("button").addEventListener("click", function () {
+        btn3.style.display = "block";
+        btn1.style.display = "none";
+        btn2.style.display = "none";
+    });
 })
 
 microphoneBtn.addEventListener('click', () => {
@@ -169,4 +209,37 @@ changerUserIconSm.addEventListener('click', () => {
 
 msgIcon.addEventListener('click', () => {
     textChat.classList.toggle('d-none');
+})
+
+const startLink = document.getElementById('start-link-btn');
+const aboutLink = document.getElementById('about-link-btn');
+const rulesLink = document.getElementById('rules-link-btn');
+const contactLink = document.getElementById('contact-us-btn');
+
+aboutLink.addEventListener('click', () => {
+    const aboutLinkSection = document.getElementById('about-link-section');
+    if (aboutLinkSection) {
+        aboutLinkSection.scrollIntoView({ behavior: 'smooth' });
+    }
+})
+
+startLink.addEventListener('click', () => {
+    const startSection = document.getElementById('start-section');
+    if (startSection) {
+        startSection.scrollIntoView({ behavior: 'smooth' });
+    }
+})
+
+rulesLink.addEventListener('click', () => {
+    const rulesSection = document.getElementById('rules-section');
+    if (rulesSection) {
+        rulesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+})
+
+contactLink.addEventListener('click', () => {
+    const contactSection = document.getElementById('contact-section');
+    if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
 })

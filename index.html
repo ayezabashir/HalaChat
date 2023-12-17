@@ -29,7 +29,7 @@
   </head>
   <body>
     <div class="hala-top-section d-flex justify-content-center mt-0">
-      <div class="hala-container">
+      <div class="hala-container" id="start-section">
         <div
           class="logo-container justify-content-start d-flex align-items-center justify-content-between"
         >
@@ -672,27 +672,27 @@
       </div>
       <div class="new-buttons" style="display: none">
         <!-- Create four new buttons -->
-        <div class="chat-start w-50 mb-2">
+        <div class="chat-start w-50 mb-2" id="new-Btn1">
           <button class="btn p-2 px-3 text-uppercase text-white font-semi-bold">
             <span class="fa fa-microphone"></span>
             Start Voice Chat
           </button>
         </div>
-        <div class="chat-start w-50 mb-2">
+        <div class="chat-start w-50 mb-2" id="new-Btn2" style="display: none">
           <button class="btn p-2 px-3 text-uppercase text-white font-semi-bold">
             <span class="fa fa-chevron-right"></span>
             Next
           </button>
         </div>
-        <div class="chat-start w-50 mb-2">
+        <div class="chat-start w-50 mb-2" id="new-Btn3" style="display: none">
           <button
-            class="btn p-2 px-3 disabled text-uppercase text-white font-semi-bold"
+            class="btn p-2 px-3 disabled-Btn text-uppercase text-white font-semi-bold"
           >
             <span class="fa fa-chevron-right"></span>
             Next
           </button>
         </div>
-        <div class="chat-start w-50 mb-2">
+        <div class="chat-start w-50 mb-2" id="new-Btn4" style="display: none">
           <button
             class="btn p-2 px-3 text-uppercase bg-yellow text-white font-semi-bold"
           >
@@ -702,13 +702,13 @@
         </div>
       </div>
       <div class="new-stop-buttons" style="display: none">
-        <div class="chat-stop mb-2">
+        <div class="chat-stop mb-2" id="stop-Btn1">
           <button class="btn p-2 px-3 text-uppercase text-white font-semi-bold">
             <span class="fa fa-pause"></span>
             Stop
           </button>
         </div>
-        <div class="chat-stop mb-2">
+        <div class="chat-stop mb-2" style="display: none" id="stop-Btn2">
           <button
             class="btn p-2 px-3 bg-yellow text-uppercase text-white font-semi-bold"
           >
@@ -716,9 +716,9 @@
             Sure?
           </button>
         </div>
-        <div class="chat-stop mb-2">
+        <div class="chat-stop mb-2" style="display: none" id="stop-Btn3">
           <button
-            class="btn disabled p-2 px-3 text-uppercase text-white font-semi-bold"
+            class="btn disabled-Btn p-2 px-3 text-uppercase text-white font-semi-bold"
           >
             <span class="fa fa-pause"></span>
             Stop
@@ -731,10 +731,14 @@
     <div class="menu-bar mt-5">
       <div class="menu-container">
         <ul class="menu-list p-0">
-          <li class="text-white menu-list-items">Start</li>
-          <li class="text-white menu-list-items font-bold">About Chat</li>
-          <li class="text-white menu-list-items">Rules</li>
-          <li class="text-white menu-list-items">Contact us</li>
+          <li class="text-white menu-list-items" id="start-link-btn">Start</li>
+          <li class="text-white menu-list-items font-bold" id="about-link-btn">
+            About Chat
+          </li>
+          <li class="text-white menu-list-items" id="rules-link-btn">Rules</li>
+          <li class="text-white menu-list-items" id="contact-us-btn">
+            Contact us
+          </li>
         </ul>
         <div class="dropdown dropleft d-lg-none d-block">
           <button
@@ -766,7 +770,7 @@
     </div>
 
     <!-- Global Voice Chat -->
-    <div class="hala-global mt-5 m-lg-0 m-4">
+    <div class="hala-global mt-5 m-lg-0 m-4" id="about-link-section">
       <div class="hala-global-container mt-5">
         <div class="hala-global-content">
           <div class="header">
@@ -804,7 +808,7 @@
     </div>
 
     <!-- Voice Chat Features -->
-    <div class="voice-chat-features mt-5">
+    <div class="voice-chat-features mt-5" id="rules-section">
       <div
         class="d-flex justify-content-center align-items-center voice-chat-container"
       >
@@ -933,7 +937,7 @@
     </div>
 
     <!-- Free chat Now -->
-    <div class="free-chat">
+    <div class="free-chat" id="contact-section">
       <div class="free-chat-container p-md-0 p-5">
         <p class="text-white font-medium">
           Are you ready for some excitement and fun? Experience the thrill of
