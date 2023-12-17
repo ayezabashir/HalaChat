@@ -120,35 +120,30 @@ function startChat() {
 
 startNewChatBtn.addEventListener('click', startChat);
 
+const startBtn1 = document.getElementById('new-Btn1')
+const startBtn2 = document.getElementById('new-Btn2')
+const startBtn3 = document.getElementById('new-Btn3')
+const startBtn4 = document.getElementById('new-Btn4')
+
 nextBtn.addEventListener('click', () => {
-    const newButtonsContainer = document.querySelector('.new-buttons');
-    newButtonsContainer.style.display = newButtonsContainer.style.display === 'none' ? 'block' : 'none';
-    var btn1 = document.getElementById("new-Btn1");
-    var btn2 = document.getElementById("new-Btn2");
-    var btn3 = document.getElementById("new-Btn3");
-    var btn4 = document.getElementById("new-Btn4");
-
-    btn1.querySelector("button").addEventListener("click", function () {
-        btn2.style.display = "block";
-        btn1.style.display = "none";
-        btn3.style.display = "none";
-        btn4.style.display = "none";
-    });
-
-    btn2.querySelector("button").addEventListener("click", function () {
-        btn3.style.display = "block";
-        btn1.style.display = "none";
-        btn2.style.display = "none";
-        btn4.style.display = "none";
-    });
-
-    btn3.querySelector("button").addEventListener("click", function () {
-        btn4.style.display = "block";
-        btn1.style.display = "none";
-        btn2.style.display = "none";
-        btn3.style.display = "none";
-    });
+    startBtn1.classList.remove('d-none');
+    nextBtn.classList.add('d-none');
 });
+
+startBtn1.addEventListener('click', () => {
+    startBtn2.classList.remove('d-none');
+    startBtn1.classList.add('d-none');
+})
+
+startBtn2.addEventListener('click', () => {
+    startBtn3.classList.remove('d-none');
+    startBtn2.classList.add('d-none')
+})
+
+startBtn3.addEventListener('click', () => {
+    startBtn4.classList.remove('d-none')
+    startBtn3.classList.add('d-none');
+})
 
 const stopBtn1 = document.getElementById('stop-Btn1');
 const stopBtn2 = document.getElementById('stop-Btn2');
