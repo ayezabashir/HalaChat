@@ -942,16 +942,11 @@ input:focus {
     }
   }
 
-  .avatar-model {
-    margin: 0 auto;
-    text-align: center;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
+  /* .avatar-model {
     .modal-dialog {
       width: 250px !important;
     }
-  }
+  } */
   .wave-final {
     .wave-final-img {
       margin-top: 27px;
