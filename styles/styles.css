@@ -360,9 +360,39 @@ input:focus {
       }
       .notification {
         position: relative;
-        .fa-bell {
-          font-size: 25px;
-          color: #fff;
+        .notification-modal {
+          background: transparent;
+          outline: none;
+          border: 0;
+          .fa-bell {
+            font-size: 25px;
+            color: #fff;
+          }
+        }
+        .modal {
+          top: 30% !important;
+          .modal-dialog {
+            .modal-content {
+              background: #00020e;
+              .modal-header {
+                padding-bottom: 0 !important;
+                padding-top: 0 !important;
+                .logo-img {
+                  width: 100px;
+                  height: 100px;
+                }
+                .close {
+                  background: transparent;
+                  outline: none;
+                  border: 0;
+                  .close-icon {
+                    font-size: 20px;
+                    color: #fff;
+                  }
+                }
+              }
+            }
+          }
         }
         .notif-red {
           position: absolute;
@@ -697,9 +727,39 @@ input:focus {
     }
     .notification {
       position: relative;
-      .fa-bell {
-        font-size: 25px;
-        color: #fff;
+      .notification-model {
+        background: transparent;
+        outline: none;
+        border: 0;
+        .fa-bell {
+          font-size: 25px;
+          color: #fff;
+        }
+      }
+      .modal {
+        top: 20% !important;
+        .modal-dialog {
+          .modal-content {
+            background: #00020e;
+            .modal-header {
+              padding-bottom: 0 !important;
+              padding-top: 0 !important;
+              .logo-img {
+                width: 100px;
+                height: 100px;
+              }
+              .close {
+                background: transparent;
+                outline: none;
+                border: 0;
+                .close-icon {
+                  font-size: 20px;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
       }
       .notif-red {
         position: absolute;
