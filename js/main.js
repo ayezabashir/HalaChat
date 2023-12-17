@@ -13,9 +13,7 @@ const microphoneBtn = document.getElementById('micBtn');
 const volumeBtn = document.getElementById('volumeBtn');
 const mediaBtn = document.getElementById('mediaBtn');
 const mediaOptions = document.querySelector('.media-options');
-const changeUserIcon = document.getElementById('change-user-icon');
 const avtars = document.querySelector('.select-avatar');
-const changerUserIconSm = document.getElementById('change-user-icon-sm');
 const msgIcon = document.getElementById('msg-icon');
 const textChat = document.getElementById('text-chat');
 const freeChatLink = document.getElementById('free-chat-Btn');
@@ -189,17 +187,6 @@ mediaBtn.addEventListener('click', () => {
 
 })
 
-changeUserIcon.addEventListener('click', () => {
-    avtars.classList.toggle('d-none')
-    const selectAvatarDiv = document.getElementById('select-avatar');
-    if (selectAvatarDiv) {
-        selectAvatarDiv.scrollIntoView({ behavior: 'smooth' });
-    }
-})
-
-changerUserIconSm.addEventListener('click', () => {
-    avtars.classList.toggle('d-none');
-})
 
 msgIcon.addEventListener('click', () => {
     textChat.classList.toggle('d-none');
