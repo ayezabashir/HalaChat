@@ -109,6 +109,7 @@ function startChat() {
         stopBtn.classList.remove('disabled');
         onlineUsers.style.display = 'none'
     }, 2000);
+    startChatText.innerText = 'Searching for partner...'
     stopBtn.classList.add('disabled');
     startNewChatBtn.style.display = 'none';
     nextBtn.classList.add('disabled');
@@ -122,6 +123,8 @@ const startBtn1 = document.getElementById('new-Btn1')
 const startBtn2 = document.getElementById('new-Btn2')
 const startBtn3 = document.getElementById('new-Btn3')
 const startBtn4 = document.getElementById('new-Btn4')
+const stopBtn1 = document.getElementById('stop-Btn1');
+const stopBtn2 = document.getElementById('stop-Btn2');
 
 nextBtn.addEventListener('click', () => {
     startBtn1.classList.remove('d-none');
@@ -131,20 +134,19 @@ nextBtn.addEventListener('click', () => {
 startBtn1.addEventListener('click', () => {
     startBtn2.classList.remove('d-none');
     startBtn1.classList.add('d-none');
+    stopBtn2.classList.remove('d-none');
+    stopBtn.classList.add('d-none');
 })
 
 startBtn2.addEventListener('click', () => {
     startBtn3.classList.remove('d-none');
-    startBtn2.classList.add('d-none')
+    startBtn2.classList.add('d-none');
 })
 
 startBtn3.addEventListener('click', () => {
     startBtn4.classList.remove('d-none')
     startBtn3.classList.add('d-none');
 })
-
-const stopBtn1 = document.getElementById('stop-Btn1');
-const stopBtn2 = document.getElementById('stop-Btn2');
 
 stopBtn.addEventListener('click', () => {
     stopBtn1.classList.remove('d-none');

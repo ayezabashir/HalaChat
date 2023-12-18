@@ -133,7 +133,18 @@
                 <div class="voice-chat-desc p-3">
                   <div class="user">
                     <div class="bg" id="user-profile">
-                      <img class="user-img" src="/assets/user.png" alt="user" />
+                      <button
+                        type="button"
+                        class="user-img-icon-select"
+                        data-toggle="modal"
+                        data-target="#exampleModalLong"
+                      >
+                        <img
+                          class="user-img"
+                          src="/assets/user.png"
+                          alt="user"
+                        />
+                      </button>
                       <img
                         class="user-icon"
                         src="/assets/user_1893502.png"
@@ -272,7 +283,7 @@
                 </div>
               </div>
               <div
-                class="chat-options d-flex justify-content-center align-items-center gap-2"
+                class="chat-options d-flex justify-content-center align-items-center gap-3"
               >
                 <!-- Start Buttons -->
                 <div class="chat-start w-75">
@@ -347,7 +358,7 @@
                   <!-- btn3 -->
                   <button
                     id="stop-Btn2"
-                    class="btn d-none disabled-Btn p-2 px-3 text-uppercase text-white font-semi-bold"
+                    class="btn d-none disabled-Btn p-2 px-1 text-uppercase text-white font-semi-bold"
                   >
                     <span class="fa fa-pause"></span>
                     Stop
