@@ -486,6 +486,7 @@ input:focus {
   outline: none;
   border: 0;
 }
+
 .avatar-model {
   top: 15% !important;
   .modal-dialog {
