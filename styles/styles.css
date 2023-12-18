@@ -511,6 +511,7 @@ input:focus {
             }
             .next-avatar {
               width: 40px;
+              cursor: pointer;
             }
           }
           .btn-avatar {
