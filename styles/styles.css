@@ -144,12 +144,21 @@ input:focus {
               border: 6px solid #571b98;
               height: 120px;
               width: 120px;
+              overflow: visible;
+              border-radius: 50%;
+              .user-img {
+                overflow: hidden;
+                object-fit: cover;
+                width: 101%;
+                border-radius: 50%;
+              }
               &:hover {
                 border-radius: 50%;
                 box-shadow: 0 0 8px 5px #9c2ff1, 0 0 10px 7px #571b98;
 
                 .bg-two {
                   .user-img {
+                    overflow: hidden;
                     object-fit: cover;
                     width: 101%;
                     border-radius: 50%;
@@ -496,7 +505,7 @@ input:focus {
             }
             .cat-img {
               width: 30px;
-              border-radius: 50%;
+              cursor: pointer;
             }
             .next-avatar {
               width: 40px;

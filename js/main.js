@@ -17,6 +17,30 @@ const avtars = document.querySelector('.select-avatar');
 const msgIcon = document.getElementById('msg-icon');
 const textChat = document.getElementById('text-chat');
 const freeChatLink = document.getElementById('free-chat-Btn');
+const catLinkOne = document.getElementById('cat1');
+const catLinkTwo = document.getElementById('cat2');
+const catLinkThree = document.getElementById('cat3');
+const showCatOne = document.getElementById('cat1-show');
+const showCatTwo = document.getElementById('cat2-show');
+const showCatThree = document.getElementById('cat3-show');
+
+catLinkOne.addEventListener('click', () => {
+    showCatOne.classList.remove('d-none');
+    showCatTwo.classList.add('d-none');
+    showCatThree.classList.add('d-none');
+})
+
+catLinkTwo.addEventListener('click', () => {
+    showCatOne.classList.add('d-none');
+    showCatTwo.classList.remove('d-none');
+    showCatThree.classList.add('d-none');
+})
+
+catLinkThree.addEventListener('click', () => {
+    showCatOne.classList.add('d-none');
+    showCatTwo.classList.add('d-none');
+    showCatThree.classList.remove('d-none');
+})
 
 const languages = [
     'Spanish', 'French', 'German', 'Chinese', 'Japanese', 'Arabic', 'Russian',
