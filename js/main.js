@@ -23,23 +23,51 @@ const catLinkThree = document.getElementById('cat3');
 const showCatOne = document.getElementById('cat1-show');
 const showCatTwo = document.getElementById('cat2-show');
 const showCatThree = document.getElementById('cat3-show');
+const nextCatBtn = document.getElementById('next-cat');
+const showNextCat = document.getElementById('next-cat-show');
+const nextCatBtn1 = document.getElementById('next-cat1');
+const nextCatBtn2 = document.getElementById('next-cat2');
 
 catLinkOne.addEventListener('click', () => {
     showCatOne.classList.remove('d-none');
     showCatTwo.classList.add('d-none');
     showCatThree.classList.add('d-none');
+    showNextCat.classList.add('d-none');
 })
 
 catLinkTwo.addEventListener('click', () => {
     showCatOne.classList.add('d-none');
     showCatTwo.classList.remove('d-none');
     showCatThree.classList.add('d-none');
+    showNextCat.classList.add('d-none');
 })
 
 catLinkThree.addEventListener('click', () => {
     showCatOne.classList.add('d-none');
     showCatTwo.classList.add('d-none');
     showCatThree.classList.remove('d-none');
+    showNextCat.classList.add('d-none');
+})
+
+nextCatBtn.addEventListener('click', () => {
+    showCatOne.classList.add('d-none');
+    showCatTwo.classList.add('d-none');
+    showCatThree.classList.add('d-none');
+    showNextCat.classList.remove('d-none');
+})
+
+nextCatBtn1.addEventListener('click', () => {
+    showCatOne.classList.add('d-none');
+    showCatTwo.classList.add('d-none');
+    showCatThree.classList.add('d-none');
+    showNextCat.classList.remove('d-none');
+})
+
+nextCatBtn2.addEventListener('click', () => {
+    showCatOne.classList.add('d-none');
+    showCatTwo.classList.add('d-none');
+    showCatThree.classList.add('d-none');
+    showNextCat.classList.remove('d-none');
 })
 
 const languages = [

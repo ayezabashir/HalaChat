@@ -490,6 +490,7 @@ input:focus {
 .avatar-model {
   top: 15% !important;
   .modal-dialog {
+    margin: 0 auto;
     width: 300px !important;
     .avatar-container {
       background: #fff;
